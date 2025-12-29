@@ -1,10 +1,9 @@
-''''jshdgfadgfkjh'''
+'''
+2. Дан список чисел. С помощью filter() получить список тех
+элементов из исходного списка, значение которых больше О.
+'''
 
-a = 2
-b = 3
+spisok = list(map(int, input("Введите числа через пробел(отрицательные и положительные): ").split()))
 
-print(a +b)
-
-''' bcghfdktybt'''
-
-print(a / b)
+print(f'Исходный список  : {spisok}')
+print(f'Числа > нуля:      {list(filter(lambda x: x > 0, spisok))}')
